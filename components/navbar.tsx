@@ -15,16 +15,10 @@ import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { Image } from "@nextui-org/image";
+
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-} from "@/components/icons";
-
+import { GithubIcon, HeartFilledIcon, SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -53,7 +47,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-          <Image alt="favicon" height={50} src="./favicon.ico" width={50} />
+            <Image alt="favicon" height={50} src="./favicon.ico" width={50} />
             <p className="font-bold text-inherit text-3xl logo">
               <span className="text-red-500">A</span>lgoM
               <span className="text-cyan-300 font-sans pt-2">!</span>tra
