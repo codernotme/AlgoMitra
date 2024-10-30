@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'etna-sans';
+    src: url('../public/etna-free-font.otf');
+}
+
+.logo{
+    font-family: 'etna-sans';
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
