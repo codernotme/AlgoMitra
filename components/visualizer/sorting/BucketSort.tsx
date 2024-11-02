@@ -6,7 +6,9 @@ interface BucketSortVisualizerProps {
   array: number[];
 }
 
-export default function BucketSortVisualizer({ array }: BucketSortVisualizerProps) {
+export default function BucketSortVisualizer({
+  array,
+}: BucketSortVisualizerProps) {
   const [currentStep, setCurrentStep] = useState<number[][]>([]);
   const [stepIndex, setStepIndex] = useState(0);
 
