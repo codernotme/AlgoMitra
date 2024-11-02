@@ -1,125 +1,138 @@
-# AlgoMitra
+# 🚀 **AlgoMitra**
 
-![AlgoMitra Logo](./logo.png) <!-- Placeholder for a real logo image -->
+<p align="center">
+  <img src="./logo.png" alt="AlgoMitra Logo" width="200"/> <!-- Placeholder for a real logo image -->
+</p>
+
+<div align="center">
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![NextUI](https://img.shields.io/badge/NextUI-ff4088?style=for-the-badge)
 ![Visualization](https://img.shields.io/badge/Visualization-Enabled-brightgreen?style=for-the-badge)
 
+</div>
+
+---
+
 ## 🌟 Introduction
 
-**AlgoMitra** is an interactive educational web application designed to demystify complex algorithms through engaging visualizations. Built with **Next.js** and **TypeScript**, this tool empowers users to explore a wide variety of algorithms—ranging from basic sorting and searching techniques to advanced graph traversal and dynamic programming strategies. With its intuitive user interface powered by **NextUI**, learning algorithms has never been more accessible or enjoyable.
+**AlgoMitra** is a visually engaging, interactive educational tool aimed at making algorithm learning enjoyable and accessible. Built with **Next.js** and **TypeScript**, and powered by **NextUI**, AlgoMitra offers seamless visualizations that allow users to intuitively explore a wide variety of algorithms, from basic sorting and searching to advanced dynamic programming and graph traversal techniques.
 
 ---
 
-## 🚀 Overview
+## 🔍 **Features at a Glance**
 
-AlgoMitra provides comprehensive visualizations for an array of algorithms, facilitating a hands-on learning experience:
+- **🌐 Rich Algorithm Library**:
+  - **Sorting Algorithms**: Bubble Sort (with more to come like Quick Sort, Merge Sort, and Heap Sort).
+  - **Searching Algorithms**: Binary Search and Linear Search.
+  - **Graph Traversal**: Upcoming support for DFS, BFS, Dijkstra’s, and Kruskal’s algorithms.
+  - **Dynamic Programming & OS Algorithms**: Early implementations of Fibonacci and Knapsack, with CPU scheduling algorithms (Round Robin, FCFS) on the way.
 
-- **Sorting Algorithms**: Start with Bubble Sort, with plans to implement Quick Sort, Merge Sort, Heap Sort, and more.
-- **Searching Algorithms**: Explore both Binary and Linear Search methods.
-- **Graph Traversal**: Upcoming features include BFS, DFS, Dijkstra’s, and Kruskal’s algorithms.
-- **Dynamic Programming & OS Algorithms**: Initial support for Fibonacci, Knapsack, and CPU scheduling algorithms (e.g., Round Robin, FCFS).
-
-AlgoMitra aims to simplify the learning process by allowing users to visually interact with the mechanics behind each algorithm.
-
-## 🌟 Features
-
-- **Interactive Algorithm Visualizations**:
-  - Sorting Algorithms: Currently featuring Bubble Sort.
-  - Searching Algorithms: Visualize Binary and Linear Searches.
-  - Graph Algorithms: Placeholder support for DFS, BFS, Dijkstra, and Kruskal.
-  - OS & Dynamic Programming: Initial implementations for scheduling and memory algorithms.
+- **💡 Interactive Controls**: 
+  - Select algorithms, generate random arrays, adjust visualization speed, and view step-by-step visual breakdowns.
   
-- **User-Friendly Controls**:
-  - Easy-to-use controls for selecting algorithms, generating random arrays, and adjusting visualization speed.
+- **📱 Responsive UI**: Adapts seamlessly across devices for learning on the go.
 
-- **Responsive and Intuitive UI**:
-  - Built with NextUI for a seamless user experience, including theme switching.
+---
 
-- **Modular Design**:
-  - Organized code structure with separate components for each algorithm, promoting clarity and reusability.
+## 🛠️ **Tech Stack**
 
-## 🛠️ Tech Stack
+Built with some of the best technologies to deliver a smooth and effective user experience:
 
-AlgoMitra is developed using the following technologies:
-
-[![Next.js](https://skillicons.dev/icons?i=nextjs)](https://nextjs.org/) &nbsp;
-[![TypeScript](https://skillicons.dev/icons?i=typescript)](https://www.typescriptlang.org/) &nbsp;
-[![React](https://skillicons.dev/icons?i=react)](https://react.dev/) &nbsp;
+[![Next.js](https://skillicons.dev/icons?i=nextjs)](https://nextjs.org/)
+[![TypeScript](https://skillicons.dev/icons?i=typescript)](https://www.typescriptlang.org/)
+[![React](https://skillicons.dev/icons?i=react)](https://react.dev/)
 [![CSS](https://skillicons.dev/icons?i=css)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+![NextUI](https://img.shields.io/badge/NextUI-FF4088?style=for-the-badge&logo=data:image/svg+xml;base64,<BASE64_SVG_HERE>&logoColor=white)
 
 ---
 
-## 📅 Stage 1 Implementation Plan
+## 📅 **Roadmap**
 
-### Upcoming Algorithm Implementations
+### **Stage 1**: Core Algorithms & Basic Visualizations
+1. **Sorting Algorithms**: Add support for Quick Sort, Merge Sort, Heap Sort, and more.
+2. **Graph Traversal Algorithms**: Introduce DFS, BFS, and shortest path algorithms (Dijkstra's).
+3. **Operating System Algorithms**:
+   - **CPU Scheduling**: FCFS, SJF, Priority Scheduling, Round Robin.
+   - **Memory Management**: Implement Paging, Segmentation, and Page Replacement strategies.
+   - **Disk Scheduling & Deadlock Handling**: Include algorithms like Banker’s and Wound-Wait.
+4. **File Management**: Implement methods for contiguous and indexed file allocations.
 
-- **Sorting Algorithms**: 
-  - Add Quick Sort, Merge Sort, Heap Sort, and expand to support a total of 11 sorting methods.
-  
-- **Searching Algorithms**:
-  - Introduce advanced searching techniques such as DFS, BFS, Jump Search, Interpolation Search, A*, and Greedy Search.
-
-- **Operating System Algorithms**:
-  - **CPU Scheduling**: Implement various methods including FCFS, SJF, Priority Scheduling, and Round Robin.
-  - **Memory Management**: Develop Paging, Segmentation, and Page Replacement algorithms (FIFO, LRU).
-  - **Disk Scheduling**: Integrate FCFS, SSTF, SCAN, C-SCAN, LOOK, and C-LOOK algorithms.
-  - **Deadlock Handling**: Include the Banker’s Algorithm, Wait-Die, and Wound-Wait schemes.
-  - **File System Management**: Develop algorithms for contiguous and indexed file allocation.
-
-## 🎨 User Interface & Navigation
-
-The UI of AlgoMitra is designed for a user-friendly experience:
-
-- **Responsive Layout**: The application adapts to various screen sizes for optimal usage across devices.
-- **Control Panel**: Features dropdowns for algorithm selection, sliders for speed adjustments, and buttons for generating arrays.
-- **Modular Components**: Each algorithm type has dedicated components to enhance code clarity and user experience.
-
-## 🚧 Future Enhancements
-
-1. **3D Visualizations**: Plans to incorporate 3D renderings for enhanced user engagement and interaction.
-2. **Dedicated Routes**: Establish separate routes for each algorithm category to improve navigation.
-3. **User-Defined Inputs**: Allow users to customize array lengths and values for a more interactive experience.
-4. **Real-time Complexity Analysis**: Provide live feedback on time and space complexity during visualizations.
-5. **Testing & Optimization**: Ensure accurate and efficient visualizations for each algorithm through rigorous testing.
+### **Stage 2**: Advanced Features & Enhancements
+1. **3D Visualizations** for enhanced engagement.
+2. **User Customization Options** for inputs like array size and values.
+3. **Real-Time Complexity Feedback**: Track and display time and space complexity in real time.
+4. **User Authentication & Profiles**: Save progress, algorithm preferences, and difficulty settings.
 
 ---
 
-## 🎯 Goal
+## 🎨 **User Interface & Navigation**
 
-The primary goal of **AlgoMitra** is to make algorithm learning not only accessible but also engaging. By enabling users to visualize the inner workings of algorithms, we strive to transform theoretical concepts into practical understanding.
+AlgoMitra’s UI is designed with simplicity and functionality in mind:
+
+- **Dynamic Control Panel**: Provides easy access to algorithm selection, speed adjustment, and array generation.
+- **Interactive Components**: Each algorithm is housed within its own modular component, ensuring clarity and smooth navigation.
+- **Accessible on All Devices**: Responsive layouts for seamless viewing across desktop and mobile platforms.
 
 ---
 
-## 🏁 Get Started
+## 🏃‍♂️ **Get Started**
 
-Ready to dive in? Clone this repository and start visualizing algorithms with **AlgoMitra**!
+Clone the repository to start exploring algorithms with **AlgoMitra**!
 
 ### Clone the Repository
-
 ```bash
 git clone https://github.com/codernotme/AlgoMitra.git
 ```
 
 ### Install Dependencies
-
 ```bash
 cd AlgoMitra
 npm install
 ```
 
 ### Start the Development Server
-
 ```bash
 npm run dev
 ```
 
-You’re all set to explore and visualize algorithms with **AlgoMitra**!
+You're all set to start visualizing algorithms in action! 🎉
 
 ---
 
-![AlgoMitra Visualizer](https://dummyimage.com/800x400/000/fff&text=AlgoMitra+Visualizer+Preview) <!-- Placeholder for a real screenshot -->
+## 📣 **How to Contribute**
 
-**AlgoMitra** © 2024
+We welcome contributions from the community! Here’s how you can contribute:
+
+1. **Fork the Repository** and make your changes in a new branch.
+2. **Submit a Pull Request**: Ensure your PR includes clear explanations of your contributions.
+3. **Check Issues**: See if there’s an open issue you’d like to help with or suggest your ideas by creating a new issue.
+
+---
+
+## 🎉 **Current Contributors**
+
+<p align="center">
+  <a href="https://github.com/codernotme/AlgoMitra/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=codernotme/AlgoMitra" alt="Contributors"/>
+  </a>
+</p>
+
+---
+
+## 👀 **Project Preview**
+
+<p align="center">
+  <img src="https://dummyimage.com/800x400/000/fff&text=AlgoMitra+Visualizer+Preview" alt="AlgoMitra Visualizer Preview" width="80%">
+</p>
+
+---
+
+## 📄 License
+
+**AlgoMitra** © 2024. Licensed under the MIT License. See [LICENSE](./LICENSE) for more information.
+
+--- 
+
+Happy coding and learning with **AlgoMitra**! 😊
