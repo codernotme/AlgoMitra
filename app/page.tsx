@@ -27,13 +27,15 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button
-                    className="bg-[#FF6B6B] hover:bg-[#FF6B6B]/90 text-white"
-                    size="lg"
-                  >
-                    Start Visualizing
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link href="/home" color="foreground">
+                    <Button
+                      className="bg-[#FF6B6B] hover:bg-[#FF6B6B]/90 text-white"
+                      size="lg"
+                    >
+                      Start Visualizing
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                   <Button
                     className="border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB]/10"
                     size="lg"
