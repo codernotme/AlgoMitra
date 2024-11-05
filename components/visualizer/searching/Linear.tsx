@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { linearSearch, SearchResult } from '@/components/controls/SearchingControl';
+import { linearSearch, SearchResult } from "@/utils/SearchingControl";
 import { Input } from '@nextui-org/input';
 import { Button } from '@nextui-org/button';
 const LinearSearchVisualizer: React.FC = () => {

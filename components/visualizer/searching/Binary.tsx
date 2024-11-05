@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from 'react';
-import { binarySearch, SearchResult } from '@/components/controls/SearchingControl';
-import { Input } from '@nextui-org/input';
-import { Button } from '@nextui-org/button';
+import React, { useState } from "react";
+import { binarySearch, SearchResult } from "@/utils/SearchingControl";
+import { Input } from "@nextui-org/input";
+import { Button } from "@nextui-org/button";
 
 const BinarySearchVisualizer: React.FC = () => {
   const [array, setArray] = useState<number[]>([]);
@@ -13,7 +13,10 @@ const BinarySearchVisualizer: React.FC = () => {
   const [mid, setMid] = useState<number | null>(null);
 
   const handleArrayInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const input = e.target.value.split(',').map(Number).sort((a, b) => a - b);
+    const input = e.target.value
+      .split(",")
+      .map(Number)
+      .sort((a, b) => a - b);
     setArray(input);
     setResult(null);
     setLeft(0);
@@ -66,15 +69,17 @@ const BinarySearchVisualizer: React.FC = () => {
       />
       <Button onClick={startBinarySearch}>Start Search</Button>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: "20px" }}>
         <p>Array: {JSON.stringify(array)}</p>
         <p>Target: {target}</p>
         <p>Left: {left}</p>
         <p>Right: {right}</p>
-        <p>Mid: {mid !== null ? mid : 'N/A'}</p>
+        <p>Mid: {mid !== null ? mid : "N/A"}</p>
         {result && (
           <>
-            <p>Index Found: {result.index !== -1 ? result.index : 'Not Found'}</p>
+            <p>
+              Index Found: {result.index !== -1 ? result.index : "Not Found"}
+            </p>
             <p>Steps Taken: {result.steps}</p>
           </>
         )}

@@ -1,11 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import {
-  breadthFirstSearch,
-  SearchResult,
-} from "@/components/controls/SearchingControl";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
+
+import { breadthFirstSearch, SearchResult } from "@/utils/SearchingControl";
 
 type AdjacencyList = number[][];
 

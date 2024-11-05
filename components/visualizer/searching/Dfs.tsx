@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {
   depthFirstSearch,
   SearchResult,
-} from "@/components/controls/SearchingControl";
+} from "@/utils/SearchingControl";
 import { Input } from "@nextui-org/input";
 
 type AdjacencyList = number[][];
