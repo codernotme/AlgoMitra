@@ -83,7 +83,37 @@ const sortingAlgorithmsInfo = [
 
 export default function SortingVisualizerPage() {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-6xl">
+    <div className="container mx-auto px-4 max-w-6xl">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="mt-8 text-center"
+      >
+        <h2 className="text-3xl font-semibold mb-4 text-[#87CEEB]">
+          What is Sorting?
+        </h2>
+        <Card className="bg-muted/50">
+          <CardContent className="pt-6">
+            <p className="text-muted-foreground mb-4">
+              Sorting is the process of arranging items in a specific order,
+              typically ascending or descending. Sorting algorithms are crucial
+              in computer science for organizing data, enabling efficient data
+              retrieval, and optimizing other operations. They vary in
+              complexity, speed, and suitability for different data types and
+              sizes.
+            </p>
+            <p className="text-muted-foreground">
+              In this visualizer, you can explore various sorting algorithms,
+              each with its own approach to sorting data. From basic ones like
+              Bubble Sort and Selection Sort to more advanced algorithms like
+              Merge Sort, Quick Sort, and Tim Sort, you&apos;ll see how each one
+              works and what makes them unique.
+            </p>
+          </CardContent>
+        </Card>
+      </motion.div>
+      <br/>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -129,35 +159,6 @@ export default function SortingVisualizerPage() {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-        className="mt-12 text-center"
-      >
-        <h2 className="text-3xl font-semibold mb-4 text-[#87CEEB]">
-          What is Sorting?
-        </h2>
-        <Card className="bg-muted/50">
-          <CardContent className="pt-6">
-            <p className="text-muted-foreground mb-4">
-              Sorting is the process of arranging items in a specific order,
-              typically ascending or descending. Sorting algorithms are crucial
-              in computer science for organizing data, enabling efficient data
-              retrieval, and optimizing other operations. They vary in
-              complexity, speed, and suitability for different data types and
-              sizes.
-            </p>
-            <p className="text-muted-foreground">
-              In this visualizer, you can explore various sorting algorithms,
-              each with its own approach to sorting data. From basic ones like
-              Bubble Sort and Selection Sort to more advanced algorithms like
-              Merge Sort, Quick Sort, and Tim Sort, you&apos;ll see how each one
-              works and what makes them unique.
-            </p>
-          </CardContent>
-        </Card>
-      </motion.div>
     </div>
   );
 }
