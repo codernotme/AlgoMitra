@@ -124,7 +124,7 @@ We welcome contributions from the community! Here’s how you can contribute:
 ## 👀 **Project Preview**
 
 <p align="center">
-  <img src="https://dummyimage.com/800x400/000/fff&text=AlgoMitra+Visualizer+Preview" alt="AlgoMitra Visualizer Preview" width="80%">
+  <img src="image-prev.png" alt="AlgoMitra Visualizer Preview" width="80%">
 </p>
 
 ---
