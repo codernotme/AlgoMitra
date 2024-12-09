@@ -108,6 +108,28 @@ export function jumpSearch(arr: number[], target: number): SearchResult {
   return { index: -1, steps };
 }
 
+export function visualizeJumpSearch(arr: number[], target: number, callback: (index: number, steps: number) => void): SearchResult {
+  const length = arr.length;
+  let step = Math.floor(Math.sqrt(length));
+  let steps = 0;
+  let prev = 0;
+
+  while (arr[Math.min(step, length) - 1] < target) {
+    steps++;
+    callback(Math.min(step, length) - 1, steps);
+    prev = step;
+    step += Math.floor(Math.sqrt(length));
+    if (prev >= length) return { index: -1, steps };
+  }
+
+  for (let i = prev; i < Math.min(step, length); i++) {
+    steps++;
+    callback(i, steps);
+    if (arr[i] === target) return { index: i, steps };
+  }
+  return { index: -1, steps };
+}
+
 // Interpolation Search (Assumes sorted and uniformly distributed array)
 export function interpolationSearch(
   arr: number[],
