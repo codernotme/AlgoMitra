@@ -1,5 +1,7 @@
+"use client";
+
 import {
-  Navbar as HeroUINavbar,
+  Navbar,
   NavbarContent,
   NavbarMenu,
   NavbarMenuToggle,
@@ -20,7 +22,7 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, HeartFilledIcon, SearchIcon } from "@/components/icons";
 
-export const Navbar = () => {
+export const Navbar1 = () => {
   const searchInput = (
     <Input
       aria-label="Search"
@@ -43,7 +45,7 @@ export const Navbar = () => {
   );
 
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <Navbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -127,6 +129,6 @@ export const Navbar = () => {
           ))}
         </div>
       </NavbarMenu>
-    </HeroUINavbar>
+    </Navbar>
   );
 };

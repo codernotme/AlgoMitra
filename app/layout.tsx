@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { Navbar } from "@/components/navbar";
+import { Navbar1 } from "@/components/navbar";
 import { HeartFilledIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col">
-            <Navbar />
+            <Navbar1 />
             <main className="mx-auto flex-grow">
               {children}
             </main>
