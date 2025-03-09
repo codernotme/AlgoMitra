@@ -8,7 +8,7 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 

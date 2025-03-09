@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Card } from "@nextui-org/card";
-import { Button } from "@nextui-org/button";
+import { Card } from "@heroui/react";
+import { Button } from "@heroui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader } from "lucide-react";
 

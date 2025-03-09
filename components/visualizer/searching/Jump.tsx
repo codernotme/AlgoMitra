@@ -1,8 +1,14 @@
+"use client";
 import React, { useState } from "react";
 import { visualizeJumpSearch } from "../../../utils/SearchingControl";
 
-const JumpVisualizer = ({ array, target }) => {
-  const [currentIndex, setCurrentIndex] = useState(null);
+interface JumpVisualizerProps {
+  array: number[];
+  target: number;
+}
+
+const JumpVisualizer: React.FC<JumpVisualizerProps> = ({ array, target }) => {
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [steps, setSteps] = useState(0);
 
   const handleVisualize = () => {
@@ -17,7 +23,7 @@ const JumpVisualizer = ({ array, target }) => {
       <button onClick={handleVisualize}>Visualize Jump Search</button>
       <div>Steps: {steps}</div>
       <div>
-        {array.map((value, index) => (
+        {array.map((value: number, index: number) => (
           <span
             key={index}
             style={{

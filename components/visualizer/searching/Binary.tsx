@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { binarySearch, SearchResult } from "@/utils/SearchingControl";
-import { Input } from "@nextui-org/input";
-import { Button } from "@nextui-org/button";
+import { Input } from "@heroui/react";
+import { Button } from "@heroui/react";
 
 const BinarySearchVisualizer: React.FC = () => {
   const [array, setArray] = useState<number[]>([]);

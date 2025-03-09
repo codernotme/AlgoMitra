@@ -4,7 +4,7 @@ import {
   depthFirstSearch,
   SearchResult,
 } from "@/utils/SearchingControl";
-import { Input } from "@nextui-org/input";
+import { Input } from "@heroui/react";
 
 type AdjacencyList = number[][];
 

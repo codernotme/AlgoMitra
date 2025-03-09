@@ -1,4 +1,4 @@
-import { Card, CardBody } from "@nextui-org/card";
+import { Card, CardBody } from "@heroui/react";
 import { GithubIcon } from "@/components/icons";
 import Link from 'next/link';
 

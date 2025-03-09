@@ -1,8 +1,8 @@
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/react";
 import { ChevronRight } from "lucide-react";
-import { Card, CardBody } from "@nextui-org/card";
-import { Input } from "@nextui-org/input";
-import { Link } from "@nextui-org/link";
+import { Card, CardBody } from "@heroui/react";
+import { Input } from "@heroui/react";
+import { Link } from "@heroui/react";
 import { GithubIcon } from "@/components/icons";
 import "../styles/home.css";
 import GraphCard from "@/components/GraphCard";

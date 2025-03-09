@@ -8,6 +8,18 @@ export const siteConfig = {
       label: "Home",
       href: "/home",
     },
+    {
+      label: "Create Algorithm",
+      href: "/create",
+    },
+    {
+      label: "Learn",
+      href: "/learn",
+    },
+    {
+      label: "Practice",
+      href: "/practice",
+    }
   ],
   navMenuItems: [
     {
@@ -19,16 +31,12 @@ export const siteConfig = {
       href: "/dashboard",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "My Algorithms",
+      href: "/my-algorithms",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Progress Tracking",
+      href: "/progress",
     },
     {
       label: "Settings",
